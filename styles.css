@@ -1,0 +1,84 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('Dialectic-Regular.woff2') format('woff2');
+  font-weight: 400; /* Match your font-weight */
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  font-family: 'MyCustomFont', serif;
+  font-weight: 400;
+  background: #fff;
+  color: #000;
+  line-height: 1.3;
+  height: 100vh;
+  font-size: 20px;
+
+  font-kerning: normal;
+  font-feature-settings: "kern";
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px 26px 26px 26px;
+}
+
+.bio {
+  width: 100%;
+  max-width: 100%;
+}
+
+.bio p {
+  font-size: 20px;
+  font-weight: inherit;
+  max-width: 100%;
+  text-align: left;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.footer-column {
+  font-size: 20px;
+  font-weight: inherit;
+  line-height: 1.3;
+  flex: 1;
+}
+
+.footer-column a {
+  color: #000;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Optional responsiveness */
+@media (max-width: 768px) {
+  .page {
+    padding: 32px 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
